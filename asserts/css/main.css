@@ -1,0 +1,38 @@
+body {
+    background: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	background: #FFFFFF;
+    padding: 20px 0;
+}
+
+.container {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.logo-header {
+    width: auto;
+}
+
+main {
+    background: linear-gradient(#FFFFFF, #000000)
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer-img {
+    width: 10%;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0;
+}
