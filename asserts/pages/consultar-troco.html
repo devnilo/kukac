@@ -9,8 +9,7 @@
 		<link rel="icon" type="image/png" href="https://kukac.com.br/wp-content/uploads/20211213165447-32x32.png">
 		<link rel="stylesheet" href="../css/reset.css">
 		<link rel="stylesheet" href="../css/troco.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 	</head>
 
@@ -21,7 +20,7 @@
 						<li><a href="../index.html">Home</a></li>
                         <li><a href="./consultar-troco.html">Cadastre sua Moto</a></li>
 						<li><a href="./cadastrar-carro.html">Cadastre seu Carro</a></li>
-						<li><a href="">Consulte seu CEP</a></li>
+						<li><a href="./consultar-cep.html">Consulte seu CEP</a></li>
 						<li><a href="">Palíndromos</a></li>
 					</div>
 				</nav>
@@ -41,25 +40,22 @@
                             <p>Digite ao lado o valor da compra e do pagamento para calcular o troco.</p> 
                             <p class="titulo-principal">Obs: Informe o valor absoluto, ou seja, sem os centavos.</p>
                         </section>
-            
-                        <section class="message">
-                            <span></span>
+                    </div>
+                    <div class="col-md-5">
+                        <section class="form-container">
+                            <form>
+                                <div class="form-group">
+                                    <label>Valor da compra</label>
+                                    <input type="text" class="form-control" id="inputPurchase" maxlength="10" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Valor do pagamento</label>
+                                    <input type="text" class="form-control" id="inputPayment" maxlength="10" required>
+                                </div>
+                                <button class="btn btn-primary" id="button-calc">Calcular</button>
+                            </form>
                         </section>
                     </div>
-                <div class="col-md-5">
-                    <section class="form-container">
-                        <form>
-                            <div class="form-group">
-                                <label>Valor da compra</label>
-                                <input type="text" class="form-control" id="inputPurchase" maxlength="10" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Valor do pagamento</label>
-                                <input type="text" class="form-control" id="inputPayment" maxlength="10" required>
-                            </div>
-                            <button class="btn btn-primary" id="button-calc">Calcular</button>
-                        </form>
-                    </section>
                 </div>
                 <section class="content-text" style="margin-top: 0;" id="result-troco" hidden>
                     <h4 class="titulo-principal">Resultado:</h4>
@@ -69,7 +65,7 @@
                     <p class="titulo-principal">Notas de cem: <span id="notas-cem"></span></p>
                 </section>
                 <section class="text-content" id="error-troco" hidden>
-                        <p style="color: #FF0000">Não foi possível calcular o troco, pois valor da compra é maior que o valor do pagamento.</p>
+                    <p style="color: #FF0000">Não foi possível calcular o troco, pois valor da compra é maior que o valor do pagamento.</p>
                 </section>
             </form>
 		</main>
