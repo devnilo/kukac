@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+
+		<title>Calcular Troco - Kukac</title>
+
+		<link rel="icon" type="image/png" href="https://kukac.com.br/wp-content/uploads/20211213165447-32x32.png">
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/troco.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+				<nav class="container">
+					<div class="navigation">
+						<li><a href="../index.html">Home</a></li>
+                        <li><a href="./consultar-troco.html">Cadastre sua Moto</a></li>
+						<li><a href="./cadastrar-carro.html">Cadastre seu Carro</a></li>
+						<li><a href="">Consulte seu CEP</a></li>
+						<li><a href="">Palíndromos</a></li>
+					</div>
+				</nav>
+		</header>
+
+		<main class="container">
+            <form id="register-section">
+                <div class="row">
+                    <div class="col-md-7">
+                        <section class="text-content">
+                            <h5 class="titulo-principal">Calcule o troco de suas compras</h5>
+                            <p>Ao informar o valor da compra e do pagamento em dinheiro, será calculado o
+                                valor do troco. Além disso, você saberá quantas em quantas notas de um, dez e cem virá o seu
+                                troco.
+                            </p>
+                                
+                            <p>Digite ao lado o valor da compra e do pagamento para calcular o troco.</p> 
+                            <p class="titulo-principal">Obs: Informe o valor absoluto, ou seja, sem os centavos.</p>
+                        </section>
+            
+                        <section class="message">
+                            <span></span>
+                        </section>
+                    </div>
+                <div class="col-md-5">
+                    <section class="form-container">
+                        <form>
+                            <div class="form-group">
+                                <label>Valor da compra</label>
+                                <input type="text" class="form-control" id="inputPurchase" maxlength="10" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Valor do pagamento</label>
+                                <input type="text" class="form-control" id="inputPayment" maxlength="10" required>
+                            </div>
+                            <button class="btn btn-primary" id="button-calc">Calcular</button>
+                        </form>
+                    </section>
+                </div>
+                <section class="content-text" style="margin-top: 0;" id="result-troco" hidden>
+                    <h4 class="titulo-principal">Resultado:</h4>
+                    <p class="titulo-principal">Troco: <span id="troco"></span></p>
+                    <p class="titulo-principal">Notas de um: <span id="notas-um"></span></p>
+                    <p class="titulo-principal">Notas de dez: <span id="notas-dez"></span></p>
+                    <p class="titulo-principal">Notas de cem: <span id="notas-cem"></span></p>
+                </section>
+                <section class="text-content" id="error-troco" hidden>
+                        <p style="color: #FF0000">Não foi possível calcular o troco, pois valor da compra é maior que o valor do pagamento.</p>
+                </section>
+            </form>
+		</main>
+
+		<footer>
+			<img class="footer-img" src="https://kukac.com.br/wp-content/uploads/20211110174809.png">
+            <p class="copyright">&copy; Copyright Kukac - 2022 &copy;</p>
+        </footer>
+	</body>
+</html>

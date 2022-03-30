@@ -20,7 +20,7 @@
 					<div class="navigation">
 						<li><a href="../index.html">Home</a></li>
 						<li><a href="./cadastrar-moto.html">Cadastre sua moto</a></li>
-						<li><a href="">Calcule seu troco</a></li>
+						<li><a href="./consultar-troco.html">Calcule seu troco</a></li>
 						<li><a href="">Consulte seu CEP</a></li>
 						<li><a href="">Palíndromos</a></li>
 					</div>
@@ -31,7 +31,7 @@
             <div class="col-md-12 col-sm-12">
                 <div class="option-buttons">
                     <button class="btn btn-primary" id="show-register-page">Cadastrar</button>
-                    <button class="btn btn-primary" id="show-registered-motos">Visualizar</button>
+                    <button class="btn btn-primary" id="show-registered-vehicles">Visualizar</button>
                 </div>
             </div>
     
@@ -52,20 +52,17 @@
                     </div>
                 <div class="col-md-5">
                     <section class="form-container">
-                        <form id="form-motos">
+                        <form id="form-veiculos" name="form_veiculos">
                             <div class="form-group">
                                 <label>Modelo</label>
                                 <input type="text" class="form-control" id="inputModel" required>
                             </div>
                             <div class="form-group">
-                                <label>Quantidade de passageiros</label>
-                                <select class="form-control" id="inputQtdPassengers" required>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                </select>
+                                <label>Marca</label>
+                                <input type="text" class="form-control" id="inputBrand" required>
                             </div>
                             <div class="form-group">
-                                <label class="bealtiful-text">Ano de fabricação</label>
+                                <label>Ano de fabricação</label>
                                 <input type="text" class="form-control" id="inputYear" name="ano"
                                     onKeyPress="MascaraAno(form_veiculos.ano);" onPaste="MascaraAno(form_veiculos.ano);"
                                     maxlength="4" required>
@@ -76,7 +73,7 @@
                 </div>
                     <section class="row" id="view-section">
                         <div id="empty-message" class="text-content" hidden>
-                            <span style="color: #FF0000">Não há motos cadastradas.</span>
+                            <span style="color: #FF0000">Não há veículos cadastrados.</span>
                         </div>
                     </section>
                 </div>
