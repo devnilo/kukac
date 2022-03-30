@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+
+		<title>Cadastar Carro - Kukac</title>
+
+		<link rel="icon" type="image/png" href="https://kukac.com.br/wp-content/uploads/20211213165447-32x32.png">
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/moto.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+				<nav class="container">
+					<div class="navigation">
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="./cadastrar-moto.html">Cadastre sua moto</a></li>
+						<li><a href="">Calcule seu troco</a></li>
+						<li><a href="">Consulte seu CEP</a></li>
+						<li><a href="">Palíndromos</a></li>
+					</div>
+				</nav>
+		</header>
+
+		<main class="container">
+            <div class="col-md-12 col-sm-12">
+                <div class="option-buttons">
+                    <button class="btn btn-primary" id="show-register-page">Cadastrar</button>
+                    <button class="btn btn-primary" id="show-registered-motos">Visualizar</button>
+                </div>
+            </div>
+    
+            <form id="register-section">
+                <div class="row">
+                    <div class="col-md-7">
+                        <section class="text-content">
+                            <h5 class="titulo-principal">Cadastre a seu carro</h5>
+                            <p>Ao preencher o formulário de cadastro com as informações do seu carro, o
+                                mesma será registrado na nossa base de dados.</p>
+                            <p>Preencha o formulário ao lado com as informações correspondentes para
+                                seu automóvel.</p>
+                        </section>
+            
+                        <section class="message">
+                            <span></span>
+                        </section>
+                    </div>
+                <div class="col-md-5">
+                    <section class="form-container">
+                        <form id="form-motos">
+                            <div class="form-group">
+                                <label>Modelo</label>
+                                <input type="text" class="form-control" id="inputModel" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Quantidade de passageiros</label>
+                                <select class="form-control" id="inputQtdPassengers" required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="bealtiful-text">Ano de fabricação</label>
+                                <input type="text" class="form-control" id="inputYear" name="ano"
+                                    onKeyPress="MascaraAno(form_veiculos.ano);" onPaste="MascaraAno(form_veiculos.ano);"
+                                    maxlength="4" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="button-register">Cadastrar</button>
+                        </form>
+                    </section>
+                </div>
+                    <section class="row" id="view-section">
+                        <div id="empty-message" class="text-content" hidden>
+                            <span style="color: #FF0000">Não há motos cadastradas.</span>
+                        </div>
+                    </section>
+                </div>
+            </form>
+		</main>
+
+		<footer>
+			<img class="footer-img" src="https://kukac.com.br/wp-content/uploads/20211110174809.png">
+            <p class="copyright">&copy; Copyright Kukac - 2022 &copy;</p>
+        </footer>
+	</body>
+</html>
