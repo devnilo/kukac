@@ -6,6 +6,7 @@ body {
 header {
     background: #000000;
     padding: 40px 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -32,11 +33,16 @@ nav a {
     text-transform: uppercase;
     text-decoration: none;
     transition: color 0.5s;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav a:hover {
     color: #FFDB58;
     text-decoration: none;
+}
+
+main {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .texto-principal {
