@@ -1,12 +1,11 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    background: #FFFFFF;
+    background: #F0F2F1;
 }
 
 header {
     background: #000000;
-    padding: 40px 0;
-    font-family: 'Montserrat', sans-serif;
+    padding: 35px 0;
 }
 
 .container {
@@ -45,26 +44,26 @@ main {
     font-family: 'Montserrat', sans-serif;
 }
 
-.texto-principal {
-    margin: 1em;
-    padding: 1em;
-    text-align: center;
-    color: #000000;
-}
-
-.texto-principal h2 {
-    display: block;
-	font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    margin: 10px 0 10px 0;
-}
-
-.box-content {
+.option-buttons {
+    margin: 1em 1em;
     display: flex;
-    background: #F0F2F1;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    justify-content: space-around;
+}
+
+.option-buttons button {
+    width: -webkit-fill-available;
+    margin: 0 1em;
+    color: #FFFFFF;
+    background: #000000;
+    border-color: #000000;
+}
+
+.option-buttons button:hover {
+    color: #FFDB58;
+    background: #000000;
+    font-weight: bold;
+    border-color: #000000;
+    text-decoration: none;
 }
 
 .text-content {
@@ -77,11 +76,6 @@ main {
     margin-bottom: 2em;
 }
 
-.box-content .text-content {
-    margin: 0;
-    padding: 2em;
-}
-
 .titulo-principal {
     color: #2b2911;
     font-size: 20px;
@@ -89,21 +83,22 @@ main {
     margin: 0 0 15px 0;
 }
 
-.page-link {
-    font-weight: bold;
+.message {
+    margin: 1em 1em;
 }
 
-.page-link:hover {
-    color: #FFDB58;
-}
-
-.image-content {
+.form-container {
     padding: 1em 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
-.image-custom {
-    width: 20em;
-    height: 10em;
+.form-container .row {
+    justify-content: space-around;
+}
+
+.card{
+    margin-bottom: 2em;
 }
 
 footer {
