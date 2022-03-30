@@ -81,15 +81,13 @@ function createCards(motos) {
     motos.forEach(item => {
         cards.push(`
         <div class="col-md-4 col-sm-12">
-            <div class="card bg-dark">
-                <div class="card-header bealtiful-text">
+                <div class="card-header titulo-principal">
                     ${item.model.toUpperCase()}
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item bealtiful-text">Quantidade de passageiros: ${item.passengers}</li>
-                    <li class="list-group-item bealtiful-text">Quantidade de rodas: ${item.wheelnumber}</li>
+                    <li class="list-group-item titulo-principal">Quantidade de passageiros: ${item.passengers}</li>
+                    <li class="list-group-item titulo-principal">Quantidade de rodas: ${item.wheelnumber}</li>
                 </ul>
-            </div>
         </div>
         `)
     })

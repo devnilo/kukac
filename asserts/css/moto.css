@@ -97,7 +97,9 @@ main {
     justify-content: space-around;
 }
 
-
+.card{
+    margin-bottom: 2em;
+}
 
 footer {
     background: #000000;

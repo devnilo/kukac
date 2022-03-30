@@ -82,7 +82,7 @@ function createCards(vehicles) {
     vehicles.forEach(item => {
         cards.push(`
         <div class="col-md-4 col-sm-12">
-            <div class="card bg-dark">
+            <div class="card">
                 <div class="card-header bealtiful-text">
                     ${item.model.toUpperCase()}
                 </div>
