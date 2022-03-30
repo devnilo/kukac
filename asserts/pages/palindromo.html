@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+
+		<title>Números Palíndromos - Kukac</title>
+
+		<link rel="icon" type="image/png" href="https://kukac.com.br/wp-content/uploads/20211213165447-32x32.png">
+		<link rel="stylesheet" href="../css/reset.css">
+		<link rel="stylesheet" href="../css/palindromo.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+				<nav class="container">
+					<div class="navigation">
+						<li><a href="../index.html">Home</a></li>
+                        <li><a href="./cadastrar-moto.html">Cadastre sua Moto</a></li>
+						<li><a href="./cadastrar-carro.html">Cadastre seu Carro</a></li>
+						<li><a href="./consultar-troco.html">Calcule seu troco</a></li>
+                        <li><a href="./consultar-cep.html">Consulte seu CEP</a></li>
+					</div>
+				</nav>
+		</header>
+
+		<main class="container">
+            <form>
+                <div class="row">
+                    <div class="col-md-7">
+                        <section class="text-content">
+                            <h5 class="titulo-principal">Números Palíndromos</h5>
+                            <p>Os números palíndromos são aqueles que quando lidos normalmente, ou seja,
+                            do inicio ao final, apresentam a mesma notação de quando são lidos do final para o início.</p>        
+                            </p>
+                                
+                            <p>
+                                <span class="titulo-principal">Exemplo:</span> o número 292 é palíndromo, 
+                                pois quando lido de trás para frente também lê-se 292. Números com 
+                                apenas um digito não são considerados palíndromos.
+                            </p>
+                            <p>Digite ao lado o primeiro e último número para 
+                                obter os números palíndromos dentro do intervalo informado.</p>
+                            </section>
+                    </div>
+                    <div class="col-md-5">
+                        <section class="form-container">
+                            <form>
+                                <div class="form-group">
+                                    <label>Primeiro número</label>
+                                    <input type="text" class="form-control" id="inputFirstNumber" maxlength="3" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Último número</label>
+                                    <input type="text" class="form-control" id="inputLastNumber" maxlength="3" required>
+                                </div>
+                                <button class="btn btn-primary" id="button-generate">Gerar números</button>
+                            </form>
+                        </section>
+                    </div>
+                </div>
+                <div class="text-content" style="margin-top: 0;">
+                    <h4 class="titulo-principal">Os números gerados aparecerão aqui:</h4>
+                    <p id="show-palindromes"></p>
+                </div>
+            </form>
+		</main>
+
+		<footer>
+			<img class="footer-img" src="https://kukac.com.br/wp-content/uploads/20211110174809.png">
+            <p class="copyright">&copy; Copyright Kukac - 2022 &copy;</p>
+        </footer>
+	</body>
+</html>
